@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='It can be defined using one to four values.'><title>Background-Position-Y / Background position x and y.</title>
+
+<link rel='canonical' href='https://mimescuy.vercel.app/posts/background-position-y/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//sorryfearknockout.com/6f/6f/d7/6f6fd798742a3672cd689b8508032d02.js'></script><meta property='og:title' content='Background-Position-Y / Background position x and y.'>
+<meta property='og:description' content='It can be defined using one to four values.'>
+<meta property='og:url' content='https://mimescuy.vercel.app/posts/background-position-y/'>
+<meta property='og:site_name' content='Mimes Cuy'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-10-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-10-29T00:00:00&#43;00:00'/><meta property='og:image' content='https://i0.wp.com/css-tricks.com/wp-content/uploads/2017/12/track_prop_position_edge.gif?ssl=1' />
+<meta name="twitter:title" content="Background-Position-Y / Background position x and y.">
+<meta name="twitter:description" content="It can be defined using one to four values."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://i0.wp.com/css-tricks.com/wp-content/uploads/2017/12/track_prop_position_edge.gif?ssl=1' />
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://mimescuy.vercel.app/">Mimes Cuy</a></h1>
+        <h2 class="site-description">Discover recipes, home ideas, style inspiration and other ideas to try.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/background-position-y/">
+                
+                    <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2017/12/track_prop_position_edge.gif?ssl=1" loading="lazy" alt="Featured image of post Background-Position-Y / Background position x and y." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/uncategorized/" >
+                Uncategorized
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/background-position-y/">Background-Position-Y / Background position x and y.</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        It can be defined using one to four values.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Oct 29, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<section>
+    <aside>
+        <a href="https://www.researchgate.net/profile/Lucyna_Kedziora-Chudczer/publication/249994890/figure/fig7/AS:347143798837254@1459776939133/ariations-in-the-target-X-position-Y-position-PSF-semimajor-and-minor-axes-A-B.png"><img alt="Variations In The Target X Position Y Position Psf Semimajor And Download Scientific Diagram It does not matter what is positioned: researchgate" src="https://www.researchgate.net/profile/Lucyna_Kedziora-Chudczer/publication/249994890/figure/fig7/AS:347143798837254@1459776939133/ariations-in-the-target-X-position-Y-position-PSF-semimajor-and-minor-axes-A-B.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxdhJNhqBrJdG3y6Yn6SBmERVnCf4-vbceFQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>683x1022 - } it has three different types of values: </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 683x1022</li> 
+    <mark>Variations In The Target X Position Y Position Psf Semimajor And Download Scientific Diagram </mark> Javascript page for this property:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://3.bp.blogspot.com/_t7QlOLKKxp0/TJpVRATuaiI/AAAAAAAAANc/9dhFu1_j0X8/s1600/Picture+5.png"><img alt="Finch Making A Fixed Body Background On Dreamweaver Browser support tables for modern web technologies. finch blogger" src="http://3.bp.blogspot.com/_t7QlOLKKxp0/TJpVRATuaiI/AAAAAAAAANc/9dhFu1_j0X8/s1600/Picture+5.png" width="100%" onerror="this.onerror=null;this.src='http://3.bp.blogspot.com/_t7QlOLKKxp0/TJpVRATuaiI/AAAAAAAAANc/9dhFu1_j0X8/s1600/Picture+5.png';"></a>
+		
+		<p style="text-align: center;"><b>470x293 - Created &amp; maintained by @fyrd, design by @lensco. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 470x293</li> 
+    <mark>Finch Making A Fixed Body Background On Dreamweaver </mark> Top right) the default values are 0 0.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.w3docs.com/uploads/media/default/0001/04/3827a81df24e7c63cfa55ddacb03826eef9dd73f.png"><img alt="Css Background Position Y Property Usage Syntax Examples It can be defined using one to four values. css background position y property" src="https://www.w3docs.com/uploads/media/default/0001/04/3827a81df24e7c63cfa55ddacb03826eef9dd73f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc2B6m8PehtSVwV6BJllw8AJxmQZvEA_kj5A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>420x330 - A minimum value for this property indicates the upper side of the rendering box, and a maximum value is at the lower side. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 420x330</li> 
+    <mark>Css Background Position Y Property Usage Syntax Examples </mark> Background position x and y.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i0.wp.com/css-tricks.com/wp-content/uploads/2017/12/track_prop_position_edge.gif?ssl=1"><img alt="A Sliding Nightmare Understanding The Range Input Css Tricks You can find other example (s) there. range input css tricks" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2017/12/track_prop_position_edge.gif?ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsz3AoiizbD7ZBHS5u3z3dsLF6nNx3kn9m0Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1687x751 - Javascript page for this property: </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1687x751</li> 
+    <mark>A Sliding Nightmare Understanding The Range Input Css Tricks </mark> The reason to want to do this is to use a background sprite as a matrix where you could change columns without changing the row.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/2308/1*uG5CIG9MSwF98DFA9k1Pdw.png"><img alt="Introduction To Sprites In Css What Are Css Sprites Why And How To By Saurabh Agarwal Medium (cm, mm, in, pt, pc, px) or a relative units designator (em, ex, ch, rem, vw, vh, and vmin). medium" src="https://miro.medium.com/max/2308/1*uG5CIG9MSwF98DFA9k1Pdw.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSH7mdBT9hn7s7TF_bP_ZpSiaMyC1N3Si2vQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1154x766 - It can be defined using one to four values. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1154x766</li> 
+    <mark>Introduction To Sprites In Css What Are Css Sprites Why And How To By Saurabh Agarwal Medium </mark> Background position x and y.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.joomshaper.com/forums?controller=attachment&amp;task=download&amp;tmpl=component&amp;id=42006"><img alt="Is It Possible To Adjust The Background Position Of Each Individual Image In A Slideshow Split up the background shorthand property. joomshaper" src="https://www.joomshaper.com/forums?controller=attachment&amp;task=download&amp;tmpl=component&amp;id=42006" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ukrBheThEPtbOTl0zitsLNDHIX8pUW_MAw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1429x731 - The reason to want to do this is to use a background sprite as a matrix where you could change columns without changing the row. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1429x731</li> 
+    <mark>Is It Possible To Adjust The Background Position Of Each Individual Image In A Slideshow </mark> Especially with a large sprite and on each element you&#039;ve set a different left value to show a different part on each element (like a single image for a menu).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/FJ0JI.png"><img alt="Percentage Values In Background Position How To Change Its Behavior Stack Overflow One or more values can be specified separated by commas. percentage values in background" src="https://i.stack.imgur.com/FJ0JI.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjLNhBWe7qtoGctSBgranVBFOxAhvLF71X3w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>900x472 - Not sure i have correctly understood you. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 900x472</li> 
+    <mark>Percentage Values In Background Position How To Change Its Behavior Stack Overflow </mark> One or more values can be specified separated by commas.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/3008/1*k-w9-2AbWq2ci-Tg5qaHkA.png"><img alt="How To Position Background Images With Css By Aliceyt Better Programming Medium One or more values can be specified separated by commas. position background images with css" src="https://miro.medium.com/max/3008/1*k-w9-2AbWq2ci-Tg5qaHkA.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzzbgpufR8JU34R5rEEYJbfR6XMcKz--nn4w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1504x1138 - A position defines an x/y coordinate, to place an item relative to the edges of an element&#039;s box. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1504x1138</li> 
+    <mark>How To Position Background Images With Css By Aliceyt Better Programming Medium </mark> } it has three different types of values:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cutewallpaper.org/21/background-position-x/React-Styled-Components-generating-excessive-css-Stack-.png"><img alt="Background Position X Posted By John Peltier If you omit one of the entries in a shorthand property, the omitted entry is reset to the default rather than simply being left alone. background position x posted by john" src="https://cutewallpaper.org/21/background-position-x/React-Styled-Components-generating-excessive-css-Stack-.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFPmk-InpKaTj4KxXDCk3R8aAsWwqOGWWxUA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>353x204 - Especially with a large sprite and on each element you&#039;ve set a different left value to show a different part on each element (like a single image for a menu). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 353x204</li> 
+    <mark>Background Position X Posted By John Peltier </mark> Javascript page for this property:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://www.w3.org/Style/CSS/Test/CSS1/19980901/refpix/sec534.gif"><img alt="Css1 Test Suite 5 3 4 Background Repeat Browser support tables for modern web technologies. css1 test suite 5 3 4 background repeat" src="http://www.w3.org/Style/CSS/Test/CSS1/19980901/refpix/sec534.gif" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/K0hlH1f2tD6BrPRx4D7hRWD0HQxKtpZ8qhvNVztlxajfj5ZuccTqCexgCLscqjlnfbiV-4yy_TsnhqbjQqNODl7LElHjR8JlQ8A4kFfqkWmsMhfaYkOHCw';"></a>
+		
+		<p style="text-align: center;"><b>751x485 - Especially with a large sprite and on each element you&#039;ve set a different left value to show a different part on each element (like a single image for a menu). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 751x485</li> 
+    <mark>Css1 Test Suite 5 3 4 Background Repeat </mark> Background position x and y.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://code-boxx.com/wp-content/uploads/2020/07/css-blur.jpg"><img alt="Blurred Text Images With Pure Css Simple Examples A position defines an x/y coordinate, to place an item relative to the edges of an element&#039;s box. blurred text images with pure css" src="https://code-boxx.com/wp-content/uploads/2020/07/css-blur.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpZTxYvezC48Ely1j9ZSLyILTeIv6R2v5C0Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>735x3318 - Positioning via separate x and y values is a feature that internet explorer introduced but never made it into a w3c specification. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 735x3318</li> 
+    <mark>Blurred Text Images With Pure Css Simple Examples </mark> A position defines an x/y coordinate, to place an item relative to the edges of an element&#039;s box.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://odinuv.cz/articles/css/sample-page-7a.png"><img alt="Styles Created &amp; maintained by @fyrd, design by @lensco. the making of a web application" src="http://odinuv.cz/articles/css/sample-page-7a.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/Iq1G1HuXiH7WhpbqUo5EBVbw5dmc620oRdDA9vew9450Odu5a0S_xyr9bjhnbA_aepsPVCVbDkJNMu8IPeOj7jXzxpyTWg_s';"></a>
+		
+		<p style="text-align: center;"><b>1029x462 - It can also be in the form of a percentage or a vertical </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1029x462</li> 
+    <mark>Styles </mark> It applies to vertical direction in internet explorer only.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://user-images.githubusercontent.com/11493828/36413263-aa4c397e-162e-11e8-8f72-78050b3f5064.PNG"><img alt="Background Position X Y Doesn T Work In Latest Firefox Issue 10 Lsharir Angular2 Emoji Picker Github To save myself the trouble in the future, i&#039;m documenting it here. github" src="https://user-images.githubusercontent.com/11493828/36413263-aa4c397e-162e-11e8-8f72-78050b3f5064.PNG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11W_pPzfWUaJdVouPvb2BjbuW-qO9zZLMzA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1087x621 - Especially with a large sprite and on each element you&#039;ve set a different left value to show a different part on each element (like a single image for a menu). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1087x621</li> 
+    <mark>Background Position X Y Doesn T Work In Latest Firefox Issue 10 Lsharir Angular2 Emoji Picker Github </mark> } it has three different types of values:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://documents.sessions.edu/eforms/courseware/coursegraphics/dreamweaveri_images/cs6/e4-bg-container.gif"><img alt="Creating Faux Column Graphics It does not matter what is positioned: creating faux column graphics" src="https://documents.sessions.edu/eforms/courseware/coursegraphics/dreamweaveri_images/cs6/e4-bg-container.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeiLGHMR-9Tw23FE7VqnjUc0sP6hWIfpVOBw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>489x194 - Support data contributions by the github community. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 489x194</li> 
+    <mark>Creating Faux Column Graphics </mark> One or more values can be specified separated by commas.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://image.slidesharecdn.com/fake-it-110412111630-phpapp01/95/fake-it-til-you-make-it-46-728.jpg?cb=1302642838"><img alt="Webkit Animations Webkit Keyframes 0 Background Position Y 0 To save myself the trouble in the future, i&#039;m documenting it here. slideshare" src="https://image.slidesharecdn.com/fake-it-110412111630-phpapp01/95/fake-it-til-you-make-it-46-728.jpg?cb=1302642838" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUN2jBkhxOh2oljfgVulVwyhxtw0j1ZDhpSQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>728x546 - It can be defined using one to four values. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 728x546</li> 
+    <mark>Webkit Animations Webkit Keyframes 0 Background Position Y 0 </mark> One or more values can be specified separated by commas.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://blog.hubspot.com/hs-fs/hubfs/Draft%20-%20CSS%20background%20position-1.png?width=600&amp;name=Draft%20-%20CSS%20background%20position-1.png"><img alt="Css Background Position Property What It Is How It Works Top right) the default values are 0 0. css background position property what" src="https://blog.hubspot.com/hs-fs/hubfs/Draft%20-%20CSS%20background%20position-1.png?width=600&amp;name=Draft%20-%20CSS%20background%20position-1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWeQx1qtaqZXK2P0lSVdyfQbrJwgLVhO9AXg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>600x344 - (cm, mm, in, pt, pc, px) or a relative units designator (em, ex, ch, rem, vw, vh, and vmin). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 600x344</li> 
+    <mark>Css Background Position Property What It Is How It Works </mark> A minimum value for this property indicates the upper side of the rendering box, and a maximum value is at the lower side.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://forum.defold.com/uploads/default/original/2X/2/2c8258939b25cec22ad6af9b0dada58fdfbc47ce.png"><img alt="Background Not Showing And Actor Starting Position Not Centered Solved Questions Defold Game Engine Forum Positioning via separate x and y values is a feature that internet explorer introduced but never made it into a w3c specification. defold game engine forum" src="https://forum.defold.com/uploads/default/original/2X/2/2c8258939b25cec22ad6af9b0dada58fdfbc47ce.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCnFk4fX92VudhsyB8ECGHRc2k8X_BkhoTg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1096x646 - The reason to want to do this is to use a background sprite as a matrix where you could change columns without changing the row. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1096x646</li> 
+    <mark>Background Not Showing And Actor Starting Position Not Centered Solved Questions Defold Game Engine Forum </mark> Test your javascript, css, html or coffeescript online with jsfiddle code editor.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.codingcommanders.com/htmlMatFiles/bottomLeft.png"><img alt="Css Background Images Browser support tables for modern web technologies. coding commanders" src="https://www.codingcommanders.com/htmlMatFiles/bottomLeft.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEhTOnJqg9iM61WVaKRDEFRXJxe3zo0Ud-4g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>350x350 - Not sure i have correctly understood you. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 350x350</li> 
+    <mark>Css Background Images </mark> It does not matter what is positioned:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://ishadeed.com/assets/multi-bg/css-bg-pos-2.png"><img alt="Understanding Css Multiple Backgrounds Browser support tables for modern web technologies. understanding css multiple backgrounds" src="https://ishadeed.com/assets/multi-bg/css-bg-pos-2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5pdWHxOF_UYk1168DYXZOIqfEZiZDYd5Bw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2092x1084 - A minimum value for this property indicates the upper side of the rendering box, and a maximum value is at the lower side. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2092x1084</li> 
+    <mark>Understanding Css Multiple Backgrounds </mark> Positioning via separate x and y values is a feature that internet explorer introduced but never made it into a w3c specification.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/ZGCPE.jpg"><img alt="How To Get The Cssvalue For Background Position Of An Element When Hovered Stack Overflow Your answer, unfortunately, is not helpful. background position of an element when" src="https://i.stack.imgur.com/ZGCPE.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW8ry4wSLSiRFuYHk2RCojZ0KFF3tc11EKsg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x848 - You can find other example (s) there. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x848</li> 
+    <mark>How To Get The Cssvalue For Background Position Of An Element When Hovered Stack Overflow </mark> If you omit one of the entries in a shorthand property, the omitted entry is reset to the default rather than simply being left alone.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Mimes Cuy
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo Cuy</a> <br />
+        Theme <b>Reang Cuy v.</b> designed by <b>Ngopi24Jam.cuy</b>
+    </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

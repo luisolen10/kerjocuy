@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Find this pin and more on pixels by john rat.'><title>Lospec Pixel Editor / Pixel studio is a new pixel art editor for artists and game developers.</title>
+
+<link rel='canonical' href='https://mimescuy.vercel.app/posts/lospec-pixel-editor/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//sorryfearknockout.com/6f/6f/d7/6f6fd798742a3672cd689b8508032d02.js'></script><meta property='og:title' content='Lospec Pixel Editor / Pixel studio is a new pixel art editor for artists and game developers.'>
+<meta property='og:description' content='Find this pin and more on pixels by john rat.'>
+<meta property='og:url' content='https://mimescuy.vercel.app/posts/lospec-pixel-editor/'>
+<meta property='og:site_name' content='Mimes Cuy'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-11-06T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-11-06T00:00:00&#43;00:00'/><meta property='og:image' content='https://pbs.twimg.com/media/DzZXxHRWwAc6_AC.jpg' />
+<meta name="twitter:title" content="Lospec Pixel Editor / Pixel studio is a new pixel art editor for artists and game developers.">
+<meta name="twitter:description" content="Find this pin and more on pixels by john rat."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://pbs.twimg.com/media/DzZXxHRWwAc6_AC.jpg' />
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://mimescuy.vercel.app/">Mimes Cuy</a></h1>
+        <h2 class="site-description">Discover recipes, home ideas, style inspiration and other ideas to try.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/lospec-pixel-editor/">
+                
+                    <img src="https://pbs.twimg.com/media/DzZXxHRWwAc6_AC.jpg" loading="lazy" alt="Featured image of post Lospec Pixel Editor / Pixel studio is a new pixel art editor for artists and game developers." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/uncategorized/" >
+                Uncategorized
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/lospec-pixel-editor/">Lospec Pixel Editor / Pixel studio is a new pixel art editor for artists and game developers.</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Find this pin and more on pixels by john rat.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Nov 06, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<section>
+    <aside>
+        <a href="https://i.redd.it/xctsp0lkcdd41.jpg"><img alt="Lospec Com Pyxel edit is a pixel art drawing application especially designed for working with tiles. lospec com" src="https://i.redd.it/xctsp0lkcdd41.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwHdnToOIw73qYfno3NUjhjhO0yJgZPkn0yw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>534x534 - The application comes to deliver an easy to use, intuitive, and unobtrusive pixel art application that. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 534x534</li> 
+    <mark>Lospec Com </mark> Pixel studio is a new pixel art editor for artists and game developers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://d2.alternativeto.net/dist/icons/pixelorama_158284.png?width=128&amp;height=128&amp;mode=crop&amp;upscale=false"><img alt="Lospec Pixel Editor Alternatives And Similar Websites And Apps Alternativeto Net Build on the work of others and share your creations, or start fresh and create something new. lospec pixel editor alternatives and" src="https://d2.alternativeto.net/dist/icons/pixelorama_158284.png?width=128&amp;height=128&amp;mode=crop&amp;upscale=false" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55lPfeWGrXNLBtpE5AKSnN0H4c0HJej0LlA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>128x128 - This is a browser based software for creating pixel art. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 128x128</li> 
+    <mark>Lospec Pixel Editor Alternatives And Similar Websites And Apps Alternativeto Net </mark> Inicialmente, lospec era focado apenas em pixel art.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.imgur.com/MQBKlIw.jpg"><img alt="Resources And Support The Software Thread The lospec pixel editor is a free, easy to use tool for creating pixel art that you can use right in your browser. resources and support the software thread" src="https://i.imgur.com/MQBKlIw.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhHFWLawd9r14bOUQZN3-ssCndudh0QnW7wA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>390x345 - Piskel is a free online editor for animated sprites &amp; pixel art. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 390x345</li> 
+    <mark>Resources And Support The Software Thread </mark> No matter whether you are a beginner or a professional.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.pinimg.com/originals/c9/64/57/c96457633bff2614d61e38b68f779bbc.png"><img alt="Lospec Pixel Editor Pixel Editor Pixel Editor Pyxel edit is a pixel art editor designed to make it fun and easy to make tilesets, levels and animations. pinterest" src="https://i.pinimg.com/originals/c9/64/57/c96457633bff2614d61e38b68f779bbc.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT35icL4n2bepku_5cHo3-PvZrL_X0pFd7Ag&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>640x640 - The lospec pixel editor is a free, easy to use tool for creating pixel art that you can use right in your browser. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 640x640</li> 
+    <mark>Lospec Pixel Editor Pixel Editor Pixel Editor </mark> Pixel studio is a new pixel art editor for artists and game developers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn-images-1.medium.com/fit/t/1600/480/1*MkdRmmo7KQ39S9qOhJtTVQ.png"><img alt="Top 12 Pixel Art Maker Tools For Game Design Buildbox By Buildbox Medium An online canvas based pixel art creation tool for lospec.com. top 12 pixel art maker tools for game" src="https://cdn-images-1.medium.com/fit/t/1600/480/1*MkdRmmo7KQ39S9qOhJtTVQ.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qtj_h9wjB8AszMARkZYQTU18tGRSBqWqyw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1600x480 - Piskel is a free online editor for animated sprites &amp; pixel art. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1600x480</li> 
+    <mark>Top 12 Pixel Art Maker Tools For Game Design Buildbox By Buildbox Medium </mark> Inicialmente, lospec era focado apenas em pixel art.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://lospec.com/pixel-editor/pixel-editor-screenshot.png"><img alt="Lospec Pixel Editor Build on the work of others and share your creations, or start fresh and create something new. lospec pixel editor" src="https://lospec.com/pixel-editor/pixel-editor-screenshot.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKI5jlXOZP2WKMJJWPSrBm2bmgz1gFzA3VsQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>548x488 - It&#039;s possible to update the information on lospec. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 548x488</li> 
+    <mark>Lospec Pixel Editor </mark> Create pixel art, game sprites and animated gifs.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://indielibre.com/wp-content/uploads/2019/03/Captura-de-pantalla-de-2019-03-14-00-57-08.png"><img alt="Conoces Lospec Indie Libre Find this pin and more on pixels by john rat. conoces lospec indie libre" src="https://indielibre.com/wp-content/uploads/2019/03/Captura-de-pantalla-de-2019-03-14-00-57-08.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTte1y2vyxVAqzOOOgT0Q50V9vzj3ISS3Fzmg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1421x743 - The facebook pixel helps you measure customer actions, build audiences and unlock optimization tools. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1421x743</li> 
+    <mark>Conoces Lospec Indie Libre </mark> Pixel studio is a new pixel art editor for artists and game developers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i0.wp.com/eduk8.me/wp-content/uploads/2017/10/piskel-mega-man.png?resize=350%2C200&amp;ssl=1"><img alt="Pixel Art Editor And More At Lospec Eduk8me We will post updates to the site here. eduk8me" src="https://i0.wp.com/eduk8.me/wp-content/uploads/2017/10/piskel-mega-man.png?resize=350%2C200&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-LTOiJ3O6t4DkeHqpvK91fB2PENLs-HWWQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>350x200 - Lospec pixel editor is a free to use pixel art software program that you can use in your web browser. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 350x200</li> 
+    <mark>Pixel Art Editor And More At Lospec Eduk8me </mark> No matter whether you are a beginner or a professional.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://lospec.com/images/social-thumbnail/pixel-art-uploader.png"><img alt="Lospec S Pixel Art Uploader Place tiles to form a level, edit them directly to see how they all work together, then. lospec s pixel art uploader" src="https://lospec.com/images/social-thumbnail/pixel-art-uploader.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQxRjvrpVx7BjuYxpU37iEWbsrwYaW1PZrRw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>771x434 - Lospec pixel editor est un programme gratuit de pixel art que vous pouvez utiliser ici, dans votre navigateur web. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 771x434</li> 
+    <mark>Lospec S Pixel Art Uploader </mark> We will post updates to the site here.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/90BghUX7SD0/maxresdefault.jpg"><img alt="What Program To Use For Pixel Art Paid And Free Software Youtube Pyxel edit is a pixel art drawing application especially designed for working with tiles. what program to use for pixel art paid and free software" src="https://i.ytimg.com/vi/90BghUX7SD0/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQAWaKWX9y9FHht_D8oy3JIh1MR__CAaBKg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - The application comes to deliver an easy to use, intuitive, and unobtrusive pixel art application that. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>What Program To Use For Pixel Art Paid And Free Software Youtube </mark> Lospec pixel editor is a free to use pixel art software program that you can use in your web browser.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/63/12/3d/63123d02-3af0-5a76-941c-f2de86f9f24e/pr_source.png/643x0w.jpg"><img alt="Pixel Studio For Pixel Art On The App Store Pyxel edit is a pixel art editor designed to make it fun and easy to make tilesets, levels and animations. pixel studio for pixel art on the app store" src="https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/63/12/3d/63123d02-3af0-5a76-941c-f2de86f9f24e/pr_source.png/643x0w.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSslcoA-EJt2wB7PnmILkUWPNvnMnAWNZxsJg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>643x482 - Pyxel edit is a pixel art drawing application especially designed for working with tiles. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 643x482</li> 
+    <mark>Pixel Studio For Pixel Art On The App Store </mark> Lospec pixel editor is a free to use pixel art software program that you can use in your web browser.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/X5laVIYE-Ic/maxresdefault.jpg"><img alt="Pixel Art Tutorials Pyxel edit is a pixel art editor designed to make it fun and easy to make tilesets, levels and animations. pixel art tutorials" src="https://i.ytimg.com/vi/X5laVIYE-Ic/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkgmLWpLsbCq3Ci-BQAytEwJvmEBU8eQBbQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - This free online pixel editor is amazingly simple. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Pixel Art Tutorials </mark> Build on the work of others and share your creations, or start fresh and create something new.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://d2.alternativeto.net/dist/s/pixel-art-to-css_949935_full.png?format=jpg&amp;width=1200&amp;height=1200&amp;mode=crop"><img alt="Pixel Art To Css Alternatives And Similar Websites And Apps Alternativeto Net It&#039;s possible to update the information on lospec. alternativeto" src="https://d2.alternativeto.net/dist/s/pixel-art-to-css_949935_full.png?format=jpg&amp;width=1200&amp;height=1200&amp;mode=crop" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR399XqGz4smON7O5FZ4PLBf9ktQTqBhH4gvA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x1200 - We will post updates to the site here. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x1200</li> 
+    <mark>Pixel Art To Css Alternatives And Similar Websites And Apps Alternativeto Net </mark> Piskel is a free online editor for animated sprites &amp; pixel art.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://64.media.tumblr.com/3d5607677171652a377bb6a664ed1fde/tumblr_inline_p6434oP4wl1qcsurn_500.png"><img alt="Retronator Lospec It&#039;s possible to update the information on lospec. retronator lospec" src="https://64.media.tumblr.com/3d5607677171652a377bb6a664ed1fde/tumblr_inline_p6434oP4wl1qcsurn_500.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQ7QKUmR7RSP-MhpyIEqliuOvE8KPLA1nAA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>500x371 - Pyxel edit is a pixel art drawing application especially designed for working with tiles. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 500x371</li> 
+    <mark>Retronator Lospec </mark> We will post updates to the site here.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=306737014062150"><img alt="Lospec Community Facebook Notre objectif était de créer une application de pixel art facile à utiliser. facebook" src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=306737014062150" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBId3jg__6ggDuhAsFTDsBHdoqZf5jcjxUow&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2048x2048 - Lospec pixel editor est un programme gratuit de pixel art que vous pouvez utiliser ici, dans votre navigateur web. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2048x2048</li> 
+    <mark>Lospec Community Facebook </mark> We will post updates to the site here.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/V2OJ5OFzwQ8/sddefault.jpg"><img alt="Lospec Pixel Editor Youtube Enquanto pensavam em oque torna a pixel o site também apresenta uma lista de sofwares para pixel art. youtube" src="https://i.ytimg.com/vi/V2OJ5OFzwQ8/sddefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgztykIkRh7wMkQok0Tl4CYGupiYSXoKwSeA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>640x480 - The lospec pixel editor is a free pixel art program that you can use right here in your web browser. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 640x480</li> 
+    <mark>Lospec Pixel Editor Youtube </mark> The application comes to deliver an easy to use, intuitive, and unobtrusive pixel art application that.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://repository-images.githubusercontent.com/202983854/24627480-9788-11ea-980d-a6277be2afdf"><img alt="Pixel Editor Github Topics Github This free online pixel editor is amazingly simple. pixel editor github topics github" src="https://repository-images.githubusercontent.com/202983854/24627480-9788-11ea-980d-a6277be2afdf" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxqat1PzbTz-Eg6PA2Ai826G2iaMW7iY2oA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1919x1053 - This is a browser based software for creating pixel art. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1919x1053</li> 
+    <mark>Pixel Editor Github Topics Github </mark> Piskel is a free online editor for animated sprites &amp; pixel art.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.homesthetics.net/wp-content/uploads/2019/07/GraphicsGale-Free-Edition_15.png"><img alt="16 Best Pixel Art Software Programs Of 2021 All Os The application comes to deliver an easy to use, intuitive, and unobtrusive pixel art application that. 16 best pixel art software programs of" src="https://cdn.homesthetics.net/wp-content/uploads/2019/07/GraphicsGale-Free-Edition_15.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-d6hgGKl6kkcJuHc0pGlAaJxbrQ-Akrvzg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1125x765 - Find this pin and more on pixels by john rat. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1125x765</li> 
+    <mark>16 Best Pixel Art Software Programs Of 2021 All Os </mark> The application comes to deliver an easy to use, intuitive, and unobtrusive pixel art application that.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/58/0a/a1/580aa1b3-ecb9-41a7-cf68-da386dbcd7f2/pr_source.png/300x0w.jpg"><img alt="Pixel Studio For Pixel Art On The App Store Pyxel edit is a pixel art editor designed to make it fun and easy to make tilesets, levels and animations. pixel studio for pixel art on the app store" src="https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/58/0a/a1/580aa1b3-ecb9-41a7-cf68-da386dbcd7f2/pr_source.png/300x0w.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQpEnghl7Gl0d_ydrH-ZVARDbj7o_E5T1NQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>300x649 - Notre objectif était de créer une application de pixel art facile à utiliser. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 300x649</li> 
+    <mark>Pixel Studio For Pixel Art On The App Store </mark> The lospec pixel editor is a free pixel art program that you can use right here in your web browser.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.kinja-img.com/gawker-media/image/upload/t_original/iycpjwyqjophf1en1vjg.png"><img alt="Learn Pixel Art With These 566 Tutorials Create pixel art, game sprites and animated gifs. learn pixel art with these 566 tutorials" src="https://i.kinja-img.com/gawker-media/image/upload/t_original/iycpjwyqjophf1en1vjg.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzecN5MAa-843ZStHkbD4wSaTzRgL5rpIxZw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1497x842 - The list of alternatives was updated ноя 2020. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1497x842</li> 
+    <mark>Learn Pixel Art With These 566 Tutorials </mark> No matter whether you are a beginner or a professional.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Mimes Cuy
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo Cuy</a> <br />
+        Theme <b>Reang Cuy v.</b> designed by <b>Ngopi24Jam.cuy</b>
+    </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

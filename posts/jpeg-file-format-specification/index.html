@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='It usually uses lossy dct compression.'><title>Jpeg File Format Specification - Exif inserts some of image/digicam information data and thumbnail image to jpeg in conformity to jpeg specification.</title>
+
+<link rel='canonical' href='https://mimescuy.vercel.app/posts/jpeg-file-format-specification/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//sorryfearknockout.com/6f/6f/d7/6f6fd798742a3672cd689b8508032d02.js'></script><meta property='og:title' content='Jpeg File Format Specification - Exif inserts some of image/digicam information data and thumbnail image to jpeg in conformity to jpeg specification.'>
+<meta property='og:description' content='It usually uses lossy dct compression.'>
+<meta property='og:url' content='https://mimescuy.vercel.app/posts/jpeg-file-format-specification/'>
+<meta property='og:site_name' content='Mimes Cuy'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-09-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-09-30T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.file-recovery.com/signatures/jp2.png' />
+<meta name="twitter:title" content="Jpeg File Format Specification - Exif inserts some of image/digicam information data and thumbnail image to jpeg in conformity to jpeg specification.">
+<meta name="twitter:description" content="It usually uses lossy dct compression."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://www.file-recovery.com/signatures/jp2.png' />
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://mimescuy.vercel.app/">Mimes Cuy</a></h1>
+        <h2 class="site-description">Discover recipes, home ideas, style inspiration and other ideas to try.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/jpeg-file-format-specification/">
+                
+                    <img src="https://www.file-recovery.com/signatures/jp2.png" loading="lazy" alt="Featured image of post Jpeg File Format Specification - Exif inserts some of image/digicam information data and thumbnail image to jpeg in conformity to jpeg specification." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/uncategorized/" >
+                Uncategorized
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/jpeg-file-format-specification/">Jpeg File Format Specification - Exif inserts some of image/digicam information data and thumbnail image to jpeg in conformity to jpeg specification.</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        It usually uses lossy dct compression.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Sep 30, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<section>
+    <aside>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PNG-Gradient_hex.png/220px-PNG-Gradient_hex.png"><img alt="Portable Network Graphics Wikipedia Jpeg stands for joint photographic experts group, which is a standardization committee. portable network graphics wikipedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PNG-Gradient_hex.png/220px-PNG-Gradient_hex.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPQLzASr2D8-d-YcIaBtGT1_SSEZw5wLpzLw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>220x168 - Jpeg file stores up to 24 bit s of data per pixel, which means it supports full color pallete. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 220x168</li> 
+    <mark>Portable Network Graphics Wikipedia </mark> It also stands for the compression algorithm that was the jpeg specification is very complex.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://wikimedia.org/api/rest_v1/media/math/render/svg/f69a5e277c8e5d58ea12abdf1b102668b9bb5bf1"><img alt="Jpeg Wikipedia The joint comes from the ccitt and iso/iec collaboration. jpeg wikipedia" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f69a5e277c8e5d58ea12abdf1b102668b9bb5bf1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8Ya3b-XEp3WM6h9dvItSNyd_KscZRZ3sug&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>510x267 - Jpeg (joint photographic experts group) is a commonly used method of lossy compression for digital images, mostly for jpeg compression is used in a number of image file formats. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 510x267</li> 
+    <mark>Jpeg Wikipedia </mark> 3.1.78 joint photographic experts group;
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://techdifferences.com/wp-content/uploads/2019/02/GIF-file-Format.jpg"><img alt="Difference Between Jpeg And Gif With Comparison Chart Advantages And Disadvantages Tech Differences Jpeg/exif is the most common image format version identifies the version of the jfif specification, with the. difference between jpeg and gif with" src="https://techdifferences.com/wp-content/uploads/2019/02/GIF-file-Format.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI9Ri2Tcgg_wFZK9EgRlvBvot3B1x71uLc0g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>484x450 - The jfif (jpeg file interchange format) specification describes the. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 484x450</li> 
+    <mark>Difference Between Jpeg And Gif With Comparison Chart Advantages And Disadvantages Tech Differences </mark> Either some more extensions and a spiff file format (never heard of it before);
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://echoone.com/filejuicer/formats/Mov-In-HexEdit.jpg"><img alt="Quicktime Player Can T Open File On Mac Os X Whether it&#039;s a photo or a graphic, visual elements are used to attract visitors&#039; attention. quicktime player can t open file on mac" src="https://echoone.com/filejuicer/formats/Mov-In-HexEdit.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmrj2K6zG-_Y3CppKdrV0ISmVk7IHjP1XzUw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>475x491 - Jpeg image file format was standardized by the joint photographic experts group and, hence, the name jpeg. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 475x491</li> 
+    <mark>Quicktime Player Can T Open File On Mac Os X </mark> The joint comes from the ccitt and iso/iec collaboration.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://res.cloudinary.com/cloudinary-marketing/image/upload/w_700,c_fill,f_auto,q_auto,dpr_2.0/Web_Assets/blog/Encoder_diagram.png"><img alt="How Jpeg Xl Compares To Other Image Codecs The most important storage formats for images online. how jpeg xl compares to other image codecs" src="https://res.cloudinary.com/cloudinary-marketing/image/upload/w_700,c_fill,f_auto,q_auto,dpr_2.0/Web_Assets/blog/Encoder_diagram.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS647RJBwe2zl2ZZcLzbyAfFV-KHE7-TXGxvQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1400x1244 - Whether it&#039;s a photo or a graphic, visual elements are used to attract visitors&#039; attention. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1400x1244</li> 
+    <mark>How Jpeg Xl Compares To Other Image Codecs </mark> The informal name of the committee which created this specification.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://mdn.mozillademos.org/files/15183/file-chooser.png"><img alt="Input Type File Html Mdn It also stands for the compression algorithm that was the jpeg specification is very complex. input type file html mdn" src="https://mdn.mozillademos.org/files/15183/file-chooser.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YKe1bOahR9LYGQToK5neMKwispQEOQYtFA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1632x1024 - The files in question may be transferred to other devices, be it mobile or stationary. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1632x1024</li> 
+    <mark>Input Type File Html Mdn </mark> The jpeg standard specifies both the codec, which defines how an image is compressed into a stream of bytes and decompressed back into an image.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.file-recovery.com/signatures/JPEG-header.png"><img alt="Jpg Signature Format Documentation Recovery Example The jpeg standard specifies both the codec, which defines how an image is compressed into a stream of bytes and decompressed back into an image. jpg signature format documentation" src="https://www.file-recovery.com/signatures/JPEG-header.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqIKgaLkKfGhOd9ZClYMXDh6ktCbf9cjv1A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>867x223 - It&#039;s an acronym for joint photographic experts group, the organization that developed the format. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 867x223</li> 
+    <mark>Jpg Signature Format Documentation Recovery Example </mark> It&#039;s an acronym for joint photographic experts group, the organization that developed the format.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://yasoob.me/images/decoding_jpeg/hero-image.png"><img alt="Understanding And Decoding A Jpeg Image Using Python Yasoob Khalid Before going into the jpeg file format specifications, the overall process of steps. decoding a jpeg image using python" src="https://yasoob.me/images/decoding_jpeg/hero-image.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT29YG68SiVSfywyNgbcMZtxwutQdza9d2NIg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2400x1260 - It is named after the joint photographic experts group, the organization which developed the format. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2400x1260</li> 
+    <mark>Understanding And Decoding A Jpeg Image Using Python Yasoob Khalid </mark> The jpg format was developed by joint photographics you&#039;ll commonly see jpg expressed as jpeg, and functionally they mean the same thing.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://formats.kaitai.io/jpeg/jpeg.svg"><img alt="Jpeg Joint Photographic Experts Group File Interchange Format Format Spec For Kaitai Struct Exif inserts some of image/digicam information data and thumbnail image to jpeg in conformity to jpeg specification. file interchange format format spec" src="https://formats.kaitai.io/jpeg/jpeg.svg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgpTUQdaIh2cyOtGGZkXOukcTcD5naBmXS_A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2619x944 - The informal name of the committee which created this specification. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2619x944</li> 
+    <mark>Jpeg Joint Photographic Experts Group File Interchange Format Format Spec For Kaitai Struct </mark> The jpeg standard specifies both the codec, which defines how an image is compressed into a stream of bytes and decompressed back into an image.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://wikimedia.org/api/rest_v1/media/math/render/png/ff679c94465da2f32ad7ed74d0902b74c16d256c"><img alt="Jpeg Computer Graphics Fandom The jpg format was developed by joint photographics you&#039;ll commonly see jpg expressed as jpeg, and functionally they mean the same thing. jpeg computer graphics fandom" src="https://wikimedia.org/api/rest_v1/media/math/render/png/ff679c94465da2f32ad7ed74d0902b74c16d256c" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ23DeLWIhhGiIq-WqpiP58meb4VX7XqBcdDA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>506x306 - The jpeg standard specifies both the codec, which defines how an image is compressed into a stream of bytes and decompressed back into an image. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 506x306</li> 
+    <mark>Jpeg Computer Graphics Fandom </mark> Or methods for registering new extensions.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.photometadata.org/sites/default/files/exif_model_pmd.gif"><img alt="Standards Exif Photometadata Org Iso is still working on formalizing it, but in the meantime ecma has already done so by simply reformatting it to their typical specification style. standards exif photometadata org" src="https://www.photometadata.org/sites/default/files/exif_model_pmd.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8e4JAUsRUYmIImK1OCFdl4Qh1EsrBom_8Bg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>500x298 - It is named after the joint photographic experts group, the organization which developed the format. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 500x298</li> 
+    <mark>Standards Exif Photometadata Org </mark> Jpeg image file format was standardized by the joint photographic experts group and, hence, the name jpeg.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://farm9.staticflickr.com/8002/7315733808_6dcfd91f88_o.gif"><img alt="Parsing Exif Client Side Using Javascript Code Flickr Com It usually uses lossy dct compression. code flickr com" src="http://farm9.staticflickr.com/8002/7315733808_6dcfd91f88_o.gif" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/KgCAYa83p4bIgaM3eMpWIyZsZ2XVNOM5DR8rsbjEfjc5MXMN4VtBl-H8ScH-7iLVJmQ6kRopZ5TovVaiHOnrFonTFmwb6LY98D7wz3ivwCMAmrJmU10';"></a>
+		
+		<p style="text-align: center;"><b>500x453 - Jpeg is a lossy image compression file format. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 500x453</li> 
+    <mark>Parsing Exif Client Side Using Javascript Code Flickr Com </mark> To simplify matters, the jfif file format only uses a part or subset of all of the options described in the jpeg.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.programmersought.com/images/300/5dd556ef240c9e6556864c6bd82d09a4.JPEG"><img alt="Mjpeg Format And Code Stream Analysis Programmer Sought Jpeg is a lossy raster format that stands for joint photographic experts group, the technical team that developed it. mjpeg format and code stream analysis" src="https://www.programmersought.com/images/300/5dd556ef240c9e6556864c6bd82d09a4.JPEG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyL9y2WfwY0rPnIFfspVpCE3b46APWBywqJg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>570x404 - Iso is still working on formalizing it, but in the meantime ecma has already done so by simply reformatting it to their typical specification style. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 570x404</li> 
+    <mark>Mjpeg Format And Code Stream Analysis Programmer Sought </mark> Typically, lossy files are much smaller than lossless files, making them ideal to use online where file size and download speed are vital.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://d33wubrfki0l68.cloudfront.net/bdc1363abbd5744200ec5283d4154e55143df86c/8c624/images/decoding_jpeg/jpegrgb_dissected.png"><img alt="Understanding And Decoding A Jpeg Image Using Python Yasoob Khalid The jfif (jpeg file interchange format) specification describes the. decoding a jpeg image using python" src="https://d33wubrfki0l68.cloudfront.net/bdc1363abbd5744200ec5283d4154e55143df86c/8c624/images/decoding_jpeg/jpegrgb_dissected.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU2PQl1pvrPyR4MtWVdXHGrnIBDkSU6-axUg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1539x1091 - To simplify matters, the jfif file format only uses a part or subset of all of the options described in the jpeg. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1539x1091</li> 
+    <mark>Understanding And Decoding A Jpeg Image Using Python Yasoob Khalid </mark> Therefore you can view exif format image files by jpeg compliant internet browser/picture viewer/photo retouch.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs13640-017-0216-z/MediaObjects/13640_2017_216_Fig5_HTML.gif"><img alt="Jpeg Privacy And Security Framework For Social Networking And Glam Services Eurasip Journal On Image And Video Processing Full Text The format has been the choice of storing even the web browsers support visualization of jpeg images. jpeg privacy and security framework for" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs13640-017-0216-z/MediaObjects/13640_2017_216_Fig5_HTML.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-MSyJOqCRIHtUUzgYqm4FRVn15AswoAOVg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>685x160 - Tiff, jpeg, gif, pcx and bmp files. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 685x160</li> 
+    <mark>Jpeg Privacy And Security Framework For Social Networking And Glam Services Eurasip Journal On Image And Video Processing Full Text </mark> It was named after the committee that created the standard, joint photographic experts group.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c70e9e9a-6d5e-425d-b16f-6ff97fe4e6a3/jpeg-sos.png"><img alt="Faster Image Loading With Embedded Image Previews Smashing Magazine Tiff, jpeg, gif, pcx and bmp files. loading with embedded image previews" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c70e9e9a-6d5e-425d-b16f-6ff97fe4e6a3/jpeg-sos.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqbvyC0oWO5Hc3I1W_iV6zw8GRHHGUEnoHg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>800x683 - A jpeg file is an image saved in a compressed graphic format standardized by the joint photographic experts group (jpeg). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 800x683</li> 
+    <mark>Faster Image Loading With Embedded Image Previews Smashing Magazine </mark> In fact, the jpeg specification itself, which we describe in terms of compression in chapter 9.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://res.cloudinary.com/cloudinary-marketing/image/upload/c_fill,w_770/dpr_3.0,f_auto,fl_lossy,q_auto/v1/Web_Assets/blog/JPEG-XL-Update.png"><img alt="How Jpeg Xl Compares To Other Image Codecs It&#039;s an acronym for joint photographic experts group, the organization that developed the format. how jpeg xl compares to other image codecs" src="https://res.cloudinary.com/cloudinary-marketing/image/upload/c_fill,w_770/dpr_3.0,f_auto,fl_lossy,q_auto/v1/Web_Assets/blog/JPEG-XL-Update.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGvvypYy2VOQW9aRKiVJzIFHcHWI_Rvag3lw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2310x1271 - The jpg format was developed by joint photographics you&#039;ll commonly see jpg expressed as jpeg, and functionally they mean the same thing. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2310x1271</li> 
+    <mark>How Jpeg Xl Compares To Other Image Codecs </mark> The jpg format was developed by joint photographics you&#039;ll commonly see jpg expressed as jpeg, and functionally they mean the same thing.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.w3.org/TR/REC-WebCGM/image2.png"><img alt="Webcgm Concepts In fact, the jpeg specification itself, which we describe in terms of compression in chapter 9. webcgm concepts" src="https://www.w3.org/TR/REC-WebCGM/image2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTptApiFBWFp2SHmjsO_IAQ3i1dns_yqqvD-Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>427x313 - Images have been an import component of websites since the internet began. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 427x313</li> 
+    <mark>Webcgm Concepts </mark> The jpg format was developed by joint photographics you&#039;ll commonly see jpg expressed as jpeg, and functionally they mean the same thing.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://martiancraft.com/img/blog/articles/small/20171023_heif_metadata@2x.png"><img alt="Introduction To Heif Image File Format A jpeg file is an image saved in a compressed graphic format standardized by the joint photographic experts group (jpeg). introduction to heif image file format" src="https://martiancraft.com/img/blog/articles/small/20171023_heif_metadata@2x.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmzKPVAjWxIbdQszSaxeeKh659rSsNvdgHaQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1312x1465 - Jpeg image file format was standardized by the joint photographic experts group and, hence, the name jpeg. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1312x1465</li> 
+    <mark>Introduction To Heif Image File Format </mark> It&#039;s an acronym for joint photographic experts group, the organization that developed the format.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.ece.ucdavis.edu/cerl/files/2015/09/jpeg_compressD.gif"><img alt="Jpeg Image Compression Systems Computer Engineering Research Lab Cerl The most important storage formats for images online. jpeg image compression systems" src="https://www.ece.ucdavis.edu/cerl/files/2015/09/jpeg_compressD.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyeGHZC1jyT4vmRjvgi02Wa5x1XOH09gr0g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>667x286 - The joint comes from the ccitt and iso/iec collaboration. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 667x286</li> 
+    <mark>Jpeg Image Compression Systems Computer Engineering Research Lab Cerl </mark> The jpg format was developed by joint photographics you&#039;ll commonly see jpg expressed as jpeg, and functionally they mean the same thing.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Mimes Cuy
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo Cuy</a> <br />
+        Theme <b>Reang Cuy v.</b> designed by <b>Ngopi24Jam.cuy</b>
+    </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
